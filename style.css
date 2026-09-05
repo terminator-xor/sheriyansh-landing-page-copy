@@ -1,0 +1,261 @@
+:root{
+    --white:#FFFFFF;
+}
+@font-face{
+    font-family: neue;
+    src: url(./NeueMachina-Regular.woff2);
+}
+@font-face {
+    font-family: manrope;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+@font-face {
+    font-family: neuelight;
+    src: url(./NeueMachina-Light.woff2);
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0px 70px;
+    background-color: black;
+    position: fixed;
+    width:100%;
+    z-index: 100;
+}
+
+.nav1 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav1 img {
+    height: 50px;
+    margin-top: 12.73px;
+}
+
+.nav1 h1 {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: neue;
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    gap:27px;
+    height: 50px;
+    background-color: #0C0C0C;
+    border-radius: 7px;
+    border:groove white 0.5px;
+    box-shadow: 0 0 0.2px white;
+}
+.nav3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reqcall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #993F1E;
+    border-radius: 30px;
+    width: 170px;
+    height: 50px;
+    background-color: #4B1E0E;
+}
+.reqcall h5{
+    font-family: neuelight;
+    font-weight: 100;
+    font-size:12px;
+}
+.nav3 #text2{
+    font-family: neuelight;
+    font-weight: 100;
+    font-size:15px;
+}
+.nav2 h4{
+    font-family: manrope;
+    font-weight: 300;
+    padding: 2px 10px;
+}
+
+.nav4{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.nav4 h4{
+    font-size: 17px;
+}
+@media (max-width:600px) {
+    nav{
+        padding: 15px 20px;
+    }
+    .nav4{
+        display: flex;
+    }
+    .nav2,.nav3{
+        display: none;
+    }
+    .nav1 h1{
+        font-size: 13px;
+        padding-top: 5px;
+        line-height: 1.7;
+    }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    padding: 170px 70px;
+    justify-content: space-between;
+}
+.left{
+    width:45%;
+}
+
+.left .smallheading{
+    display: flex;
+} 
+.left .smallheading h4{
+    font-family: manrope;
+    font-size:18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color:#E85418;
+}
+.mainheading h3{
+    margin:0px 0px;
+    font-weight: 500;
+    line-height: 0.99;
+    color: var(--white);
+    font-size: 50px;
+}
+.text h4{
+    font-width: 300px;
+    color:#848080;
+    font-family: neuelight;
+    font-size: 20px; 
+}
+.price{
+    display: flex;
+    gap:10px;
+}
+.price h4{
+    margin:0px 0px;
+    display: flex;
+    font-size: 30px;
+    font-family: manrope;
+    font-weight: 350;
+    color:var(--white);
+    align-items: center;
+}
+.price #amount{
+    color:#E85418;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap:20px;
+    margin:30px 10px;
+}
+.button1,.button2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:2px;
+   font-weight: 600;
+   cursor: pointer;
+   font-family: neue;
+   border-radius: 10px;
+   height: 47px;
+   width:150px;
+}
+.button1{
+    background-color: #CA5226;
+}
+.button2{
+    background-color: transparent;
+    border:solid 2px white;
+}
+.right{
+    background-color: #1F120D;
+    border-radius: 20px;
+    height: 100%;
+    width:45%;
+}
+.top{
+    display: flex;
+    gap:5px;
+}
+.top #c1{
+    width:7px;
+    height:7px;
+    background-color: #F87171;
+    border-radius: 50%;
+    margin-top:30px;
+    margin-left: 30px;
+}
+.top #c2{
+    width:7px;
+    height:7px;
+    background-color: #FACC15;
+    border-radius: 50%;
+    margin-top:30px;
+}
+.top #c3{
+    width:7px;
+    height:7px;
+    background-color: #4ADE80;
+    border-radius: 50%;
+    margin-top:30px;
+}
+
+.middle img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:6px;
+    margin:5px 20px;
+    flex-wrap: wrap;
+    
+}
+.bottom h4{
+    margin:0px 0px;
+    font-family: neuelight;
+    padding: 8px 18px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    font-weight: 400;
+    background-color: #130F0F;
+    white-space: nowrap;
+}
