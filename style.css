@@ -263,7 +263,7 @@ main{
 @media (max-width: 600px) {
     main {
         flex-direction: column;
-        padding: 170px 30px;
+        padding: 100px 30px;
     }
     .left,
     .right {
