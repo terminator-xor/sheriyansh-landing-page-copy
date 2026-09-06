@@ -269,4 +269,7 @@ main{
     .right {
         width: 100%;
     }
+    .mainheading h3{
+        font-size: 37px;
+    }
 }
