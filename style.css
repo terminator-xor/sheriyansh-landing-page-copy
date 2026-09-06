@@ -259,3 +259,13 @@ main{
     background-color: #130F0F;
     white-space: nowrap;
 }
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    .left,
+    .right {
+        width: 100%;
+    }
+}
